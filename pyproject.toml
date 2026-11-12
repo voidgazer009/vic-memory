@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vic-memory"
+version = "0.1.0"
+description = "Brain-inspired, model-agnostic long-term memory for any AI agent (zero dependencies, MCP server included)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Vic"}]
+keywords = ["ai", "agent", "memory", "llm", "mcp", "long-term-memory", "rag"]
+classifiers = ["Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License"]
+
+[project.urls]
+Homepage = "https://github.com/voidgazer009/vic-memory"
+
+[project.scripts]
+vic-memory = "vic_memory.cli:main"
+
+[tool.setuptools]
+packages = ["vic_memory"]
